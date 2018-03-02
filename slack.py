@@ -144,7 +144,7 @@ elif sys.argv[1].lower() == "radarr":
     year = data_omdb['Year']
 
     message = {
-        "text": "New movie downloaded - {} ({}) IMDB: {}".format(media_title, year, imdbrating),
+        "text": "New movie downloaded - {} ({}) IMDb: {}".format(media_title, year, imdbrating),
         "username": slack_user,
         "icon_emoji": slack_icon,
         "channel": slack_channel_movie,
@@ -160,7 +160,7 @@ elif sys.argv[1].lower() == "radarr":
              "color": "#3AA3E3",
              "text": overview,
              "footer": "{} - {} - Release Date: {}".format(quality, scene_name, release)},
-	    {"title": "IMDB URL",
+	    {"title": "IMDb URL",
              "color": "#e3b53a",
              "text": imdburl}
         ]
